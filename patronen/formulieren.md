@@ -1,9 +1,3 @@
----
-menu: Patronen
----
-
-[![hackmd-github-sync-badge](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg/badge)](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg)
-
 # Richtlijnen voor formulieren: Bereid een formulier voor
 
 ## Inventariseer of informatie al beschikbaar is
