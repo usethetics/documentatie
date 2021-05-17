@@ -1,3 +1,7 @@
+---
+menu: Patronen
+---
+
 # Richtlijnen voor formulieren: Bereid een formulier voor
 
 ## Inventariseer of informatie al beschikbaar is
