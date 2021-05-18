@@ -1,142 +1,94 @@
-# Forms
+---
+menu: Patronen
+---
 
-[![hackmd-github-sync-badge](https://hackmd.io/vXazt598Sn2t358J65D8Qg/badge)](https://hackmd.io/vXazt598Sn2t358J65D8Qg)
+[![hackmd-github-sync-badge](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg/badge)](https://hackmd.io/gZriDtYKQBqxLVVAtkMtvg)
 
-###### tags: `NLDS` `Patronen`
-For individual form component guidelines please consult the documentation for that specific component.
+# Richtlijnen voor formulieren: Bereid een formulier voor
 
-_Status: **In development**_
+## Inventariseer of informatie al beschikbaar is
 
-## Introduction
+Inventariseer of informatie al beschikbaar is, bv. in het systeem van de gemeenteof middels DigiD.
 
-A form is the moment the user enters into a dialogue with our products and organisation. It should therefore be as clear and convenient as possible.
+## Formuleer de vragen die je wilt stellen
 
-A good form invites users to complete a task successfully.
+Formuleer eerst alle vragen die je aan jouw gebruiker wilt stellen.
 
-## General guidelines
+### Selectieafhankelijke vragen
 
-Only ask for the strictly necessary information and inform users of the necessity of the requested information. Avoid the need for users to enter the same information several times.
+Selectieafhankelijke of conditionele vragen worden getoond als reactie op een eerdere vraag.
 
-### Logical structure
+Conditionele vragen verschijnen altijd ná de originele vraag, nooit in een eerdere stap.
 
-Structuring a form vertically is more pleasant and comfortable for users to both read and interact with.
+## Stel alleen noodzakelijke vragen
 
-Users scan and read a page on a screen according to an ‘F’ pattern (in LTR languages). They first start scanning horizontally at the top and then visually down a page vertically, occasionally making a horizontal excursion.
+Bedenk of alle vragen daadwerkelijk nodig zijn. Is het bijvoorbeeld nodig om [naar het geslacht]({#link-naar-inclusierichtlijnen!}) of geboortedatum te vragen? Wat is het doel hiervan voor de organisatie en vooral het voordeel voor de gebruiker?
 
-Forms in a one-column layout are easier to scan. A logical sequence indicates which data is expected at what time.
+## Combineer en groepeer vragen
 
-Indicating the length of the expected input can (sparingly) be shown visually by input fields of different widths. For instance, data for a house number is often shorter than a telephone number. An exception to this rule can be made and a house number addition field can be displayed next to a house number field. This is however only possible if the fields have a direct relationship with each other and are in a logical order.
+Groepeer vragen vanuit de visie van de gebruiker, en niet vanuit jouw organisatie. In deze stap betrek je idealiter een aantal echte gebruikers die helpen de vragen logisch te groeperen.
 
-### Information density
+Enkele conventies voor ‘groepeerblokken’ zijn vast te stellen, zoals bijvoorbeeld voor NAW-gegevens, ondertekening, bankgegevens, geboortedatum en toe te voegen bijlagen. De volgorde waarin deze blokken getoond worden kan echter per doel verschillen.
 
-When structuring a form, there should be enough space between different visual elements. These elements must also be well grouped so that it is clear that, for example, a label belongs to a text input field. Takes different states of elements into account; for example, a possible error message should be in the proximity of the erroneous element and show a direct context.
+Wanneer een formulier als dialoog wordt gezien ontstaan onderwerpen vaak op een natuurlijke wijze. Gebruik deze onderwerpen om een formulier logisch te groeperen.
 
-If the form is long or contains a lot of information and becomes difficult for users to process. Consider breaking it down into multiple steps or pages: ‘[chunking](https://www.nngroup.com/articles/chunking/)’.
+Ook de ‘boekhoofdstuk metafoor’ of waar een koptekst moet verschijnen, kan hulp bieden bij het groeperen. Gebruikers vragen wat voor hen een logische groepering is, is uiteraard een hele goede methode om te groeperen.
 
-## Text labels
+Voorzie de groepen van duidelijke kopteksten.
 
-A text label allows the user to scan a form clearly and comfortably. All form elements must be accompanied by a textual label; a checkbox, select menu, radio button, textarea, etc.
+### Enkele vragen, meerdere elementen
 
-A proper label is placed outside of the input field, not within it. This is naturally the case with most form elements; a checkbox, for example, has no room to internally accommodate a text label. For buttons, this label is the button text itself; a button performs an action and is not an element where a user can enter data.
+Een enkele vraag op een formulier hoeft niet slechts één formulierelement te zijn. Het vragen van NAW-gegevens (“Wat is uw naam en adres?”) of een geboortedatum bestaan immers uit meerdere elementen om deze enkele vragen te beantwoorden.
 
-Several studies have shown that the best position for a text input label is directly top left of an input field (for LTR languages). In this way, the label always has a fixed position and can be displayed in a readable text size. Because of this fixed position, a form can be easily scanned and a user can immediately distinguish between a field that has been filled in and a field that still needs to be filled in.
+### Sorteren
 
-### Interaction target area
+Groepen kunnen op verschillende manieren gesorteerd worden. Een van de opties is dat eerst makkelijke vragen, en daarna de moeilijke aan bod komen. Een andere optie is om eerst voor ingevulde antwoorden op vragen te tonen. Optionele vragen – mits ze niet bij een bepaalde groep horen-  stel je aan het einde.
+Een gebruiker moet voordat hij aan het formulier goed kunnen zien of het formulier of een vraag voor hem bedoeld is. Als een gebruiker niet voor een bepaald onderdeel of bepaalde vraag niet in aanmerking komt, moet dit snel in het proces duidelijk zijn. Beslisbomen kunnen hierbij helpen. Zet zo’n beslisboom vooraan in het formulier.
 
-An additional benefit of placing a label outside an input field is that you make the click and tap area larger making selecting an input field easier for both mouse and touchscreen users. A properly implemented label has an association with the form element; web browsers allow users to set focus to an input element by clicking on the text label.
+## Meerstappen formulieren
 
-### ‘Floating labels’
+Als het om een beperkt aantal onderwerpen gaat onderverdeeld in een klein aantal secties dan kunnen deze op een enkele pagina getoond worden.
 
-A label placed in an input field can confuse a user as text is already displayed in the input field. Legibility also suffers since contrast between foreground (text) and background color is often too low. It can also be confused with inactive or placeholder text. Sometimes it might also be necessary to show actual placeholder text.
+Overweeg het formulier in meerdere stappen of pagina's op te breken als deze heel lang is, veel informatie bevat of lastig is te interpreteren door gebruikers.
 
-## Placeholder text
+Zorg er echter voor dat deze stappen in betekenisvolle groepen zijn verdeeld. Gebruik hierbij duidelijke navigatie.
 
-Optional placeholder text can assist in determining the correct data format requested for a particular input.
+Als het lastig blijkt het formulier te interpreteren als niet alle vragen op een enkel scherm voorhanden zijn, splits deze dan niet op in meerdere stappen.
 
-A telephone number input field for example can display a placeholder explaining the desired data format (+31 010 12 345 679).
+### Verschillende soorten formulieren
 
-Placeholder text must be legible and therefore have a correct contrast ratio. Because users could confuse the placeholder text with entered text, it is advisable to avoid placeholder text.
+Formulieren met condities zijn lastiger op te breken. Antwoord op een vraag in een stap kan er voor zorgen dat een extra stap nodig is. Hierdoor kan de navigatie wijzigen en een gebruiker in de war raken. Daarom maken we onderscheid in 3 soorten formulieren:
 
-## Helper text
+1. Korte, bondige formulieren. Deze kunnen op 1 pagina getoond worden. Een kort formulier is bijvoorbeeld een formulier met slechts 1 groep of maximaal 3 groepen vragen.
+1. Lange formulieren zonder condities. Deze kunnen over meerdere pagina’s of stappen verspreid worden. Navigatie is voor deze formulieren inzichtelijk, omdat alle afzonderlijke groepen vast staan. Een gebruiker kan ook op voorhand alle vragen doornemen.
+1. Lange formulieren mét condities. Ook deze formulieren beslaan meerdere pagina’s of stappen. Omdat het antwoord op een vraag invloed kan hebben op vervolgvragen, en zelfs hele groepen van vragen contextueel wel of niet getoond worden, kan navigatie voor deze formulieren niet altijd vooraf vaststaan. Een gebruiker kan dan niet alle vragen doornemen. Vooruit navigeren is hierdoor vaak niet mogelijk, terug navigeren uiteraard wel.
 
-Optional helper or feedback text is secondary to the primary action of completing a text entry. This text can be dynamic, such as when a field is filled incorrectly and you want to explain how to correct this error.
+### Navigatie en oriëntatie
 
-Helper text is shown below the entry field.
+Wanneer een formulier in meerdere stappen wordt opgebroken, dan is het belangrijk deze van goede navigatie te voorzien. Hierdoor weet een gebruiker ten alle tijden waar hij vandaan komt, op dat moment is, en naartoe kan gaan. Navigatie kan tevens dienst doen om het totale aantal stappen, voortgang binnen deze stappen en eventuele validatiefouten te tonen.
 
-## Validation and feedback
+Bij het gebruik van meerdere pagina’s dient de ingevoerde informatie tussen pagina’s bewaard te blijven en door de gebruiker te wijzigen zijn.
 
-A form element should not be validated until the focus of that element is unset. This makes it possible to immediately display an error message if, for example, the entered format does not meet the requirements for that field. As such, a user immediately sees the error and can fix it immediately.
+Een gebruiker zou zowel voorwaarts als terug moeten kunnen navigeren.
 
-Feedback should only be shown on incorrect fields in order to minimize the mental strain on users.
+Wanneer stappen over meerdere pagina’s worden getoond dan dient iedere pagina een unieke beschrijvende titel te hebben.
 
-Not all fields need to be validated; for a first name field we cannot determine whether it is correct. To show this as correctly validated would be strange. When submitting a form, whether something has actually been entered in a field can however be validated. A user does not have to fill in a form according to the visual order on the screen. It should be allowed, for example, to fill in a last name field before filling in the first name field without this being considered an error.
+### Voorbeeld van een stappenmodel
 
-## Required vs optional fields
+#### Stappenmodel voor desktopversie formulier
 
-If not all fields are required, make clear which fields are.
+![](https://i.imgur.com/gNAKpNw.png)
 
-The best way to indicate this is with a text so that it is also announced by screen readers. Are most fields required in a form? Then only show an indication for the optional fields. However, make sure that this pattern is consistent throughout the interface.
+#### Stappenmodel voor tabletversie formulier
 
-## Genderinclusivity
+![](https://i.imgur.com/5NOTWDu.png)
 
-Many forms ask for gender. Sometimes this might be necessary, sometimes there is no other option and sometimes this is done to answer properly. Usually the choice is limited to either man or woman. Try however to avoid unnecessary questions about gender. Where you absolutely have to ask for a gender also provide a neutral option. On the advice of stakeholders, such as the transgender network TNN, the text label ‘Niet relevant’ should be used for this.
+#### Stappenmodel voor mobiele versie formulier
 
-- [Terugdringen van onnodige vragen naar sekse](https://www.denhaag.nl/nl/bestuur-en-organisatie/contact-met-de-gemeente/terugdringen-van-onnodige-vragen-naar-sekse.htm)
+![](https://i.imgur.com/c7Nvcz7.png)
 
-## Accessibility
+Bij de stappen zou altijd beschrijvende tekst getoont moeten worden. Voor weergave op kleine schermen kun je volstaan met nummers in de navigatie items met daaronder de verklarende tekst.
 
-Form elements must meet the following requirements, they have:
+### Bewerken en tussentijds opslaan
 
-1. A label or instruction associated with the form element,
-2. In case of an error, a clear error message,
-3. In the event of an error message, a clear explanation must be given on how to correct this error and how to prevent it in the future.
-
-If an input generates an error, make sure that the corresponding error message is announced by screen readers at the right time and in the right way.
-
-## Referenties
-
-1. [https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/)
-2. [https://medium.com/nextux/design-better-forms-96fadca0f49c](https://medium.com/nextux/design-better-forms-96fadca0f49c)
-3. [https://baymard.com/premium/topics/427](https://baymard.com/premium/topics/427)
-4. [https://www.nngroup.com/articles/web-form-design/](https://www.nngroup.com/articles/web-form-design/)
-5. [https://baymard.com/blog/mobile-form-usability-label-position](https://baymard.com/blog/mobile-form-usability-label-position)
-6. [https://baymard.com/premium/guidelines/1043](https://baymard.com/premium/guidelines/1043)
-7. [https://www.lukew.com/ff/entry.asp?504](https://www.lukew.com/ff/entry.asp?504)
-8. [https://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php](https://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php)
-9. [https://ai.googleblog.com/2014/07/simple-is-better-making-your-web-forms.html](https://ai.googleblog.com/2014/07/simple-is-better-making-your-web-forms.html)
-10. [https://medium.com/simple-human/floating-labels-are-a-bad-idea-82edb64220f6](https://medium.com/simple-human/floating-labels-are-a-bad-idea-82edb64220f6)
-11. [https://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php](https://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php)
-12. [http://www.webaxe.org/floated-labels-still-suck/](http://www.webaxe.org/floated-labels-still-suck/)
-13. [https://www.w3.org/WAI/GL/wiki/Using\_@placeholder_on_input](https://www.w3.org/WAI/GL/wiki/Using_@placeholder_on_input)
-14. [https://uxplanet.org/designing-more-efficient-forms-assistance-and-validation-f26a5241199d](https://uxplanet.org/designing-more-efficient-forms-assistance-and-validation-f26a5241199d)
-15. [https://www.lukew.com/ff/entry.asp?725](https://www.lukew.com/ff/entry.asp?725)
-16. [http://preibusch.de/publications/Preibusch-Krol-Beresford_voluntaryover-disclosure.pdf](http://preibusch.de/publications/Preibusch-Krol-Beresford_voluntaryover-disclosure.pdf)
-17. [https://formdesignpatterns.com/](https://formdesignpatterns.com/)
-18. [https://twitter.com/lukew/status/872845844965240835](https://twitter.com/lukew/status/872845844965240835)
-19. [https://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php](https://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php)
-20. [https://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php](https://www.uxmatters.com/mt/archives/2013/02/dont-put-labels-inside-text-boxes-unless-youre-luke-w.php)
-21. [https://www.interaction-design.org/literature/topics/fitts-law](https://www.interaction-design.org/literature/topics/fitts-law)
-22. [https://ai.googleblog.com/2014/07/simple-is-better-making-your-web-forms.html](https://ai.googleblog.com/2014/07/simple-is-better-making-your-web-forms.html)
-23. [https://medium.com/simple-human/floating-labels-are-a-bad-idea-82edb64220f6](https://medium.com/simple-human/floating-labels-are-a-bad-idea-82edb64220f6)
-24. [https://www.intechopen.com/books/user-interfaces/simple-but-crucial-user-interfaces-in-the-world-wide-web-introducing-20-guidelines-for-usable-web-fo](https://www.intechopen.com/books/user-interfaces/simple-but-crucial-user-interfaces-in-the-world-wide-web-introducing-20-guidelines-for-usable-web-fo)
-25. [https://www.sitepoint.com/definitive-guide-form-label-positioning/](https://www.sitepoint.com/definitive-guide-form-label-positioning/)
-26. [https://bradfrost.com/blog/post/float-label-pattern/](https://bradfrost.com/blog/post/float-label-pattern/)
-27. [https://uxdesign.cc/text-fields-forms-design-ui-components-series-2b32b2beebd0](https://uxdesign.cc/text-fields-forms-design-ui-components-series-2b32b2beebd0)
-
-## History
-
-0.4 (27-01-2021)
-
-- Added section on gender inclusivity (via Celina van Hees)
-
-0.3 (14-01-2021)
-
-- Translated from Dutch to English
-
-  0.2 (25-11-2020)
-
-- First public version
-
-  0.1 (20-11-2020)
-
-- First draft
+Het moet mogelijk zijn om stappen terug te gaan en antwoorden te bewerken. Het tussentijds opslaan van antwoorden is hierbij van belang, al is dit niet altijd wenselijk (bijvoorbeeld als om een machtiging gevraagd wordt). In deze gevallen is het wellicht een optie om deze vragen op 1 pagina te tonen.
